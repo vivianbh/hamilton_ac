@@ -156,9 +156,9 @@ function pnorm_hessian(x,p,tol=1e-10)
 end
 
 #helper function for computing regressor
-L(v) = [v[1] v[2] v[3] 0 0 0
-     0 v[1] 0 v[2] v[3] 0
-     0 0 v[1] 0 v[2] v[3]]
+L(v) = [v[1]  v[2]  v[3]     0     0     0
+           0  v[1]     0  v[2]  v[3]     0
+           0     0  v[1]     0  v[2]  v[3]]
 
 
 function vee(R)
